@@ -168,7 +168,7 @@ const ProductOptions: React.FC<ProductOptionsProps> = ({ id, choice_options, col
             {choice_options && choice_options.length > 0 && choice_options.map((option: any) => (
                 <div key={option.name} className='flex item justify-start   gap-2' >
                     <h4>{option.title}:</h4>
-                    <div className='flex shrink-0 gap-1.5 rounded-full md:px-4 items-center overflow-auto w-full flex-wrap'>
+                    <div className='flex shrink-0 gap-1.5 md:px-4 items-center overflow-auto w-full flex-wrap'>
                         {option.options.map((item: any, index: any) => (
                             <div
                                 key={index}

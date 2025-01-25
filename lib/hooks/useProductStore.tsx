@@ -4,22 +4,24 @@ type StoreProps = {
   price: any;
   qty: any;
   combinationImage: any;
-  setCombinationImage: (value: any) => void;
   combinationName: any;
+  sku: string;  // Add sku to the state
+  setSku: (value: string) => void;  // Add setSku function
   setPriceValue: (value: any) => void;
+  setCombinationImage: (value: any) => void;
   setQty: (value: any) => void;
   setCombinationName: (value: any) => void;
   isSidebarOpen: boolean;
   setSidebarOpen: (data: boolean) => void;
   openCart: boolean;
   setOpenCart: (data: boolean) => void;
-  reviewEvent: any,
+  reviewEvent: any;
   setReviewEvent: (value: number) => void;
-  selectColoreVariant: any,
+  selectColoreVariant: any;
   setSelectColoreVariant: (value: any) => void;
-  lookProduct: any,
+  lookProduct: any;
   setLookProduct: (value: any) => void;
-  lookProductLoading: boolean,
+  lookProductLoading: boolean;
   setLookProductLoading: (value: boolean) => void;
 };
 
@@ -28,6 +30,8 @@ export const productStore = create<StoreProps>((set, get) => ({
   qty: 0,
   combinationImage: null,
   combinationName: null,
+  sku: '',  // Initialize sku with an empty string
+  setSku: (value) => set({ sku: value }),  // Add setSku method
   setPriceValue: (value) => set({ price: value }),
   setCombinationImage: (value) => set({ combinationImage: value }),
   setQty: (value) => set({ qty: value }),
@@ -58,6 +62,4 @@ export const productStore = create<StoreProps>((set, get) => ({
   setLookProduct: (value) => set({ lookProduct: value }),
   lookProductLoading: false,
   setLookProductLoading: (value) => set({ lookProductLoading: value }),
-
-
 }));
