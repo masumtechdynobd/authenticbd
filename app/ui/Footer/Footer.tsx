@@ -74,7 +74,7 @@ export default async function Footer({ setting, translate }: any) {
                     </div>
                 </div>
                 <div className="footer_widget_area flex  items-center sm:items-start gap-3 justify-between flex-wrap">
-                    <div className="widget_right flex  items-center sm:items-start gap-[30px] sm:gap-[100px] flex-wrap justify-center ">
+                <div className="hidden sm:flex items-center sm:items-start gap-[30px] sm:gap-[100px] flex-wrap justify-center">
                         <div className="widget_one w-[220px]">
                             <h4 className='font-medium uppercase text-base ' >{about_authentic_bd}</h4>
                             <div>

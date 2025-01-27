@@ -85,33 +85,33 @@ export default async function FooterSeo({isMobile, translate, setting}:any) {
             
                     <div className="">
                         <div className="">
-                            <h4 className='font-medium uppercase text-base ' >{about_authentic_bd}</h4>
+                            <h4 className='font-medium uppercase text-base text-center text-white mt-6'>{about_authentic_bd || "About Authentic Bd.com"}</h4>
                             <div>
-                                <ul className='flex items-center sm:items-start flex-col gap-[12px] sm:gap-[18px] pt-[16px] sm:pt-[27px] text-sm sm:text-base' >
-                                    <li><Link href='/page/about-us' >{footer_about_us}</Link></li>
-                                    <li><Link href='/page/faq' >{footer_faq}</Link></li>
-                                    <li><Link href='/page/contact-us' >{footer_contact_us}</Link></li>
-                                    <li><Link href='/page/returnpolicy' >{footer_shipping_return}</Link></li>
-                                    <li><Link href='/page/privacypolicy' >{footer_privacy_policy}</Link></li>
-                                    <li><Link href='/page/terms' >{footer_term_condition}</Link></li>
-                                    <li><Link href='/affiliate' >{be_an_affiliate_partner}</Link></li>
+                                <ul className='flex items-center text-white sm:items-start flex-col gap-[12px] sm:gap-[18px] pt-[16px] sm:pt-[27px] text-sm sm:text-base' >
+                                    <li><Link href='/page/about-us' >{footer_about_us || "About Us"}</Link></li>
+                                    <li><Link href='/page/faq' >{footer_faq || "FAQ"}</Link></li>
+                                    <li><Link href='/page/contact-us' >{footer_contact_us || "Contact Us"}</Link></li>
+                                    <li><Link href='/page/returnpolicy' >{footer_shipping_return || "Shipping & Return"}</Link></li>
+                                    <li><Link href='/page/privacypolicy' >{footer_privacy_policy || "Privacy Policy"}</Link></li>
+                                    <li><Link href='/page/terms' >{footer_term_condition || "Terms & Condition"}</Link></li>
+                                    <li><Link href='/affiliate' >{be_an_affiliate_partner || "Bw an affiliate partner"}</Link></li>
                                 </ul>
                             </div>
                         </div>
-                        <div className="widget_two text-center sm:text-start ">
-                            <h4 className='font-medium uppercase text-base '>{customer_care}</h4>
-                            <div className='flex items-center sm:items-start flex-col gap-[12px] sm:gap-[18px] pt-[16px] sm:pt-[27px] text-sm sm:text-base'>
+                        <div className="widget_two text-center sm:text-start">
+                            <h4 className='font-medium uppercase text-base text-white mt-6'>{customer_care || "CUSTOMER CARE"}</h4>
+                            <div className='flex items-center text-white sm:items-start flex-col gap-[12px] sm:gap-[18px] pt-[16px] sm:pt-[27px] text-sm sm:text-base'>
                                 <div className='flex items-center gap-3'>
-                                    <LocationIcon /> <p>{contact_address?.value}</p>
+                                    <LocationIcon /> <p>{contact_address?.value || "House # 34, Road # 02, Block # L, Banani, Dhaka"}</p>
                                 </div>
                                 <div className='flex items-center gap-3'>
-                                    <TimeIcon /> <p>{timings}</p>
+                                    <TimeIcon /> <p>{timings || "Timings : ( Mon to sat) 8:00 AM to 10:00 PM"}</p>
                                 </div>
                                 <div className='flex items-center gap-3'>
-                                    <EmailIcon /> <p>{contact_email?.value}</p>
+                                    <EmailIcon /> <p>{contact_email?.value || "info@authentic.com.bd"}</p>
                                 </div>
                                 <div className='flex items-center gap-3'>
-                                    <PhoneIcon /> <p>{contact_phone?.value}</p>
+                                    <PhoneIcon /> <p>{contact_phone?.value || "019 4240 6570"}</p>
                                 </div>
                             </div>
                         </div>

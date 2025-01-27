@@ -155,7 +155,7 @@ export type ProductDetails = {
   choice_options: any[];
   colors: any[];
   has_discount: boolean;
-  discount: string;
+  discount: number;
   stroked_price: string;
   main_price: string;
   calculable_price: number;
@@ -179,6 +179,7 @@ export type ProductDetails = {
   meta_title: string;
   meta_description: string;
   meta_img: string;
+  discount_text: string;
 }
 export type Brand = {
   id: number;
